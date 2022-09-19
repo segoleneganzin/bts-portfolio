@@ -46,6 +46,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    width: 70%;
 }
 .experience-container h2 {
     text-align: left;
@@ -60,7 +61,17 @@ body {
     font-size: 25px;
     font-weight: bold;
 }
-
+.experience-item-container {
+    display: flex;
+    align-items: center;
+    margin: 0 20% 0 20%;
+}
+.experience-item-container img {
+    width: 10%;
+}
+.experience-item-2 {
+    margin: 4%;
+}
 /******************************************Liens reseaux***************************************/
 .link-container {
     position: fixed;
@@ -114,6 +125,16 @@ footer p {
         font-size: 15px;
     } 
 }
+@media screen and (max-width:1124px) {
+    .experience-item-container {
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+    .experience-item-container p {
+        text-align: center;
+    }
+}
 /******************************************Responsive presentation***************************************/
 @media screen and (max-width:950px) {
     *{
@@ -131,7 +152,7 @@ footer p {
     
     /*********************************************contenu responsive******************************************************/
     .contenu h2 {
-        text-align: left;
+        text-align: center;
         margin-left: 5%;
         font-size: 50px;
     }
@@ -141,16 +162,13 @@ footer p {
     /*********************************************competence responsive******************************************************/
     .competence-container p {
         text-align: justify;
-        font-size: 15px;
+        font-size: 13px;
     }
     .competence-container b {
-        font-size: 25px;
+        font-size: 15px;
     }
     /*********************************************experience responsive******************************************************/
-    .experience-container {
-        margin: 0;
-        text-align: center;
-    }
+    
     .experience-container p {
         text-align: center;
     }
@@ -158,13 +176,18 @@ footer p {
         width: 95%;
         margin: 5%;
     }
-    .experience-item h3 small {
-        font-size: 25px;
-    }
     .experience-item h3 {
         margin-bottom: 2%;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: bold;
+    }
+    .experience-item-container {
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+    .experience-item-container img {
+        width: 50%;
     }
     /*********************************************liens reseaux responsive******************************************************/
     .link-container {
