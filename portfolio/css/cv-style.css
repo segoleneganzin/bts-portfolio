@@ -8,6 +8,9 @@
 p, h1, h2, h3, ul, li {
     color: black;
 }
+li {
+    font-size: 20px;
+}
 body {
     background-color: var(--background-color-secondary);
 }
@@ -86,7 +89,44 @@ body {
 footer p {
     color: grey;
 }
-/******************************************Responsive***************************************/
+/******************************************Responsive general et specifique different de 768px***************************************/
+@media screen and (max-width:768px) {
+    .contenu p {
+        font-size: 15px;
+    }
+    .contenu b {
+        font-size: 20px;
+    }
+    li {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:768px) {
+    .contenu p {
+        font-size: 15px;
+    }
+    .contenu b {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .contenu p {
+        font-size: 15px;
+    }
+    .contenu b {
+        font-size: 20px;
+    }
+    .competence-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 5% 0 5%;
+    }   
+    li {
+        font-size: 15px;
+    } 
+}
+/******************************************Responsive presentation***************************************/
 @media screen and (max-width:950px) {
     *{
         color: var(--text-color);
@@ -100,6 +140,7 @@ footer p {
         align-self: center;
         width: 40%;
     }
+    
     /*********************************************contenu responsive******************************************************/
     .contenu h2 {
         text-align: left;
@@ -109,23 +150,20 @@ footer p {
     .image-training{
         margin: 5% 0 5% 0;
     }
-/*********************************************competence responsive******************************************************/
-    .competence-container {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin: 0 5% 0 5%;
-    }    
+    /*********************************************competence responsive******************************************************/
     .competence-container p {
         text-align: justify;
-        font-size: 25px;
+        font-size: 15px;
     }
     .competence-container b {
-        font-size: 30px;
+        font-size: 25px;
     }
     /*********************************************experience responsive******************************************************/
     .experience-container {
         align-items: left;
+    }
+    .experience-container {
+        margin: 0;
     }
     .experience-item {
         width: 95%;
@@ -158,11 +196,5 @@ footer p {
         width: 100%;
     }
 }
-@media screen and (max-width:768px) {
-    .contenu p {
-        font-size: 15px;
-    }
-    .contenu b {
-        font-size: 20px;
-    }
-}
+
+
