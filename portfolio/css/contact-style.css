@@ -50,3 +50,8 @@ button {
         width: 90%;
     }
 }
+@media all and (max-width: 680px) {
+    .form-item {
+        width: 80%;
+    }
+}
