@@ -1,0 +1,29 @@
+#slider {
+    margin-top: 1%;
+}
+.index-presentation h2 {
+    font-size: 30px;
+    margin: 0 5%;
+    color: var(--title-color);
+    text-align: center;
+}
+.carousel {
+    background-color: var(--background-color-principal);
+}
+.index-presentation {
+    padding-top: 10%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+    border: none;
+    padding-bottom: 20%;
+}
+@media screen and (max-width:768px) {
+    #slider {
+        margin-top: 10%;
+    }
+    .index-presentation h2 {
+        font-size: 15px;
+        text-align: left;
+        padding: 0 5%;
+    }
+}

@@ -1,0 +1,34 @@
+body {
+    background-color: var(--background-color-secondary);
+}
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+form {
+    background-color: var(--background-color-secondary);
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;}
+input {
+    width: 100%;
+    height: 50px;
+}
+select {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+    height: 200px;
+}
+button:focus {
+    border: 1px solid var(--a-focus-color);
+}
+@media all and (max-width: 768px)  {  
+    form {
+        width: 90%;
+    }
+    iframe {
+        width: 80%;
+    }
+}

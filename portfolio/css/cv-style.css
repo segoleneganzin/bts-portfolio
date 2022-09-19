@@ -1,0 +1,168 @@
+/*CV PAGE*/
+:root {
+    --text-color:white;
+}
+* {
+    font-size: 15px;
+}
+p, h1, h2, h3, ul, li {
+    color: black;
+}
+body {
+    background-color: var(--background-color-secondary);
+}
+
+/******************************************Header - presentation***************************************/
+.presentation {
+    display: flex;
+    justify-content: space-evenly;
+}
+.adresse h2 {
+    font-size: 25px;
+}
+.photo-profil {
+    width: 25%;
+    box-sizing: border-box;
+}
+.photo-profil img {
+    border-radius: 100%;
+}
+/******************************************Contenu***************************************/
+.contenu {
+    display: flex;
+    flex-direction: column;
+}
+.contenu h2 {
+    margin: 10%;
+}
+/******************************************Formations***************************************/
+.image-training{
+    margin: auto;
+}
+/******************************************Competences***************************************/
+.competence-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/******************************************Experiences***************************************/
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.experience-container h2 {
+    text-align: left;
+    margin-bottom: 2%;
+}
+.experience-item {
+    width: 100%;
+    margin-bottom: 5%;
+}
+.experience-item h3 small {
+    font-size: 20px;
+}
+.experience-item h3 {
+    margin-bottom: 2%;
+    font-size: 25px;
+    font-weight: bold;
+}
+/******************************************Liens reseaux***************************************/
+.link-container {
+    position: fixed;
+    top: 25%;
+    left: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.link-container a {
+    width: 40%;
+}
+.link-container img{
+    width: 90%;
+}
+/*****************************************Footer*********************************************/
+footer p {
+    color: grey;
+}
+/******************************************Responsive***************************************/
+@media screen and (max-width:950px) {
+    *{
+        color: var(--text-color);
+    }
+    .presentation, .adresse {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 5% 0 5%;
+    }
+    .photo-profil {
+        align-self: center;
+        width: 40%;
+    }
+    /*********************************************contenu responsive******************************************************/
+    .contenu h2 {
+        text-align: left;
+        margin-left: 5%;
+        font-size: 50px;
+    }
+    .image-training{
+        margin: 5% 0 5% 0;
+    }
+/*********************************************competence responsive******************************************************/
+    .competence-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 5% 0 5%;
+    }    
+    .competence-container p {
+        text-align: justify;
+        font-size: 25px;
+    }
+    .competence-container b {
+        font-size: 30px;
+    }
+    /*********************************************experience responsive******************************************************/
+    .experience-container {
+        align-items: left;
+    }
+    .experience-item {
+        width: 95%;
+        margin: 5%;
+    }
+    .experience-item h3 small {
+        font-size: 25px;
+    }
+    .experience-item h3, .experience-item ul {
+        margin: 0 5% 0 5%;
+    }
+    .experience-item h3 {
+        margin-bottom: 2%;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    /*********************************************liens reseaux responsive******************************************************/
+    .link-container {
+        position: absolute;
+        top: 35%;
+        left: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .link-container a {
+        width:60%;
+    }
+    .link-container img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:768px) {
+    .contenu p {
+        font-size: 15px;
+    }
+    .contenu b {
+        font-size: 20px;
+    }
+}
