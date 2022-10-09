@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Accueil</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/base-style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/index-style.css" type="text/css" media="screen" />
+  </head>
+  <div class="border-fixe"><hr></div>
+  <body> 
+    <header>        
+      <label for="drawer-control" class="drawer-toggle"></label>
+      <div class="row menu-hamburger">
+        <input type="checkbox" id="drawer-control" class="drawer" aria-label="Menu hamburger"/>
+        <div class="col-md-4">
+          <label for="drawer-control" class="drawer-close"></label>
+          <div class="nav-link-container">
+            <a href="index.html" class="nav-link"><b class="on-page">Accueil</b></a>
+            <a href="cv.html" class="nav-link">CV</a>
+            <a href="galerie.html" class="nav-link">Galerie</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="principal-nav">
+        <ul class="pages-nav">
+          <li><a href="index.html" class="nav-link"><b class="on-page">Accueil</b></a></li>
+          <li><a href="cv.html" class="nav-link">CV</a></li>
+          <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header> 
+    <section class="slider-wrapper theme-default carousel">
+      <div id="slider" class="nivoSlider">
+          <a href="./galerie.html#python" aria-label="Go to the project"><img src="image/python.png" data-thumb="image/python.png" alt="Logo Python" class="side-image"/></a>
+          <a href="./galerie.html#sql" aria-label="Go to the project"><img src="image/sql.jpg" data-thumb="image/sql.jpg" alt="Logo SQL" class="side-image"/></a>
+          <a href="./galerie.html#java" aria-label="Go to the project"><img src="image/java-pc.png" data-thumb="image/java-pc.png" alt="Java" class="side-image"/></a>
+          <a href="./galerie.html#html-css-js" aria-label="Go to the project"><img src="image/html5-js-css3-logo.jpg" data-thumb="image/html5-js-css3-logo.jpg" alt="HTML5 CSS3 javaScript" class="side-image"/></a>
+      </div>
+    </section>
+    <main id="#main">
+      <section class="index-presentation">
+        <h1>Bienvenue sur mon portfolio</h1>
+        <h2>Formation <span class="highlight">BTS</span> <br/>
+        <span class="highlight">S</span>ervices <span class="highlight">I</span>nformatiques aux <span class="highlight">O</span>rganisations</h2>
+        <h2>Option <span class="highlight">S</span>olutions <span class="highlight">L</span>ogicielles et <span class="highlight">A</span>pplications <span class="highlight">M</span>étiers</h2>
+      </section>
+    </main>
+
+
+    <footer>
+      <p class="p-footer">Site web réalisé par Ségolène Ganzin</p>
+      <div class="link-container-footer">
+        <a href="https://www.linkedin.com/in/segoleneganzin/" target="_blank" rel="noopener" aria-label="Linkedin profile"><img src="./image/linkedin.png" alt="Logo Linkedin"></a>
+        <a href="https://github.com/segoleneganzin" target="_blank" rel="noopener" aria-label="Github profile"><img src="./image/github.png" alt="Logo Github"></a>
+      </div>
+    </footer>
+
+    <!--Scroll up-->
+    <div id="scroll_to_top">
+      <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg></a>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+      $(window).load(function() {
+          $('#slider').nivoSlider();
+      });
+    </script>
+  </body>
+
+</html>

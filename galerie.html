@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Galerie</title>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="monScript.js"></script>
+        <link rel="stylesheet" href="css/base-style.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/galerie-style.css" type="text/css" media="screen" />
+    </head>
+    <div class="border-fixe"><hr></div>
+    <body>
+      <header>        
+        <label for="drawer-control" class="drawer-toggle"></label>
+  
+        <div class="row menu-hamburger">
+          <input type="checkbox" id="drawer-control" class="drawer" aria-label="Menu hamburger"/>
+          <div class="col-md-4">
+            <label for="drawer-control" class="drawer-close"></label>
+            <div class="nav-link-container">
+              <a href="index.html" class="nav-link">Accueil</a>
+              <a href="cv.html" class="nav-link">CV</a>
+              <a href="galerie.html" class="nav-link"><b class="on-page">Galerie</b></a>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+          </div>
+        </div>
+  
+        <nav class="principal-nav">
+          <ul class="pages-nav">
+            <li><a href="index.html" class="nav-link">Accueil</a></li>
+            <li><a href="cv.html" class="nav-link">CV</a></li>
+            <li><a href="galerie.html" class="nav-link"><b class="on-page">Galerie</b></a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <h1 class="page-title">Portfolio</h1>
+      </header>  
+      <main>
+
+        <!-- <div class="transition"></div> -->
+        
+        <div class="image-container">
+          <figure>
+            <p>Projets réalisés en Python</p>
+            <img src="image/python.png" data-thumb="image/python.png" alt="Logo python" id="python"/>
+            <figcaption>Différents algorithmes écrits dans le langage Python</figcaption>
+          </figure>
+            <figure>
+              <p>Projets réalisés en SQL</p>
+              <img src="image/sql.jpg" data-thumb="image/sql.jpg" alt="SQL" id="sql"/>
+              <figcaption>Gestion de bases de données avec des requêtes SQL</figcaption>
+            </figure>
+            <figure>          
+              <p>Projet réalisé en Java</p>
+              <img src="image/java-pc.png" data-thumb="image/java-pc.png" alt="Java" id="java"/>
+              <figcaption>Application de bureau réalisé avec le langage Java</figcaption>
+            </figure>
+            <figure>
+              <p>Projets Web</p>
+              <img src="image/html5-js-css3-logo.jpg" data-thumb="image/html5-js-css3-logo.png" alt="HTML5, CSS3, javaScript" id="html-css-js"/>
+              <figcaption>Application Web en HTML5, CSS3 et javaScript</figcaption>
+            </figure>
+            <figure>
+              <p>Projets réalisés en full CSS3</p>
+              <a href="pony/pony.html" target="_blank"><img src="image/pony-painting.png" data-thumb="image/pony-painting.png" alt="Pony full css" id="pony-css"/></a>
+              <figcaption>Visuel conçu entièrement en CSS3 avec une animation</figcaption>
+            </figure>
+            <figure>
+              <p>Projets réalisés en full SASS</p>
+              <a href="sky-timelapse/sky-timelapse.html" target="_blank"><img src="image/timelapse.png" data-thumb="image/timelapse.png" alt="Timelapse full css" id="timelapse-css"/></a>
+              <figcaption>Visuel conçu entièrement avec le langage de script SASS</figcaption>
+            </figure>
+        </div>
+      </main>
+      <footer>
+        <p class="p-footer">Site web réalisé par Ségolène Ganzin</p>
+        <div class="link-container-footer">
+          <a href="https://www.linkedin.com/in/segoleneganzin/" target="_blank" rel="noopener" aria-label="Linkedin profile"><img src="./image/linkedin.png" alt="Logo Linkedin"></a>
+          <a href="https://github.com/segoleneganzin" target="_blank" rel="noopener" aria-label="Github profile"><img src="./image/github.png" alt="Logo Github"></a>
+        </div>
+      </footer>
+
+          <!--Scroll up-->
+      <div id="scroll_to_top">
+        <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+          </svg></a>
+      </div>
+
+    </body>
+
+
+</html>
