@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
         <link rel="stylesheet" href="css/base-style.css" type="text/css">
         <link rel="stylesheet" href="css/cv-style.css" type="text/css">
-        <script src="monScript.js"></script>
+        <script src="js/script.js"></script>
     </head>
     <div class="border-fixe"><hr></div>
     <body>
@@ -36,17 +36,37 @@
             </nav>
             <h1 class="page-title">Mon CV</h1>
         </header>  
-        <div class="transition"></div>
-        <div class="presentation">
-            <div class="photo-profil">
-                <img src="./image/DSC01566.jpg" alt="Photo de profil">
+        <!-- <div class="transition"></div> -->
+        <header class="site-header">
+            <div class="identity">
+                <div class="identity-img">
+                    <img src="./image/DSC01566.jpg" alt="profil picture">
+                </div>
+                <div class="identity-name">
+                        <h1>Hi! I'm </h1>
+                        <div class="typewriter-name">Ségolène Ganzin.</div>
+                        <div class="identity-resume">                       
+                            <p>Développeuse informatique en formation</p>
+                        </div>
+                </div>                    
             </div>
-            <div class="adresse">
-                <h1>Ségolène GANZIN</h1>
-                <h2>mon adresse</h2>
-            </div>
-        </div>
+        </header>
         <div class="contenu">
+            <div class="presentation reveal">
+                <div class="container">
+                    <p>J’ai grandi entouré d’ordinateurs et de périphériques en tout genre, au travers de l’entreprise familiale, et cela m’a toujours suivi et intéressé.<br> 
+                        Après plusieurs années en cuisine je fais le choix de retourner à ma première passion, l’informatique. <br> <br> 
+                        J’ai toujours aimé essayer de <span class="important-word">comprendre</span> le fonctionnement des ordinateurs, <span class="important-word">résoudre</span> des problèmes, <span class="important-word">trouver</span> des solutions,<br>  
+                        <span class="important-word">aider</span> les autres à travers le service client, me sentir utile, <span class="important-word">m’amuser à coder</span>, découvrir de nouvelles choses et <span class="important-word">apprendre</span> en permanence.<br> 
+                        La conception, le développement web et la maintenance m'attirent particulièrement, tout comme le traitement des bases de données et la cybersécurité des services informatiques.<br> <br> 
+                        J’ai acquis des compétences informatiques lors de mes études en économie et en statistiques et informatique décisionnel, comme les <span class="important-word">bases du codage</span> (Html5, CSS3, JavaScript) et la suite <span class="important-word">Microsoft Office</span>. <br><br>
+                        Mon goût pour l'apprentissage m'a amené à suivre des cours sur <span class="important-word">Windows</span>, la virtualisation des environnements de travail (hyperviseurs de type 2 principalement - <span class="important-word">VirtualBox</span>), 
+                        la mise en place d'une <span class="important-word">veille technologique</span>, la conception d'un <span class="important-word">réseau TCP/IP</span>, la gestion d'un <span class="important-word">serveur Windows</span> et je continu à enrichir mes compétences au quotidien.<br> <br>
+                        Afin de poursuivre mon apprentissage dans le développement j'ai intégré un <span class="important-word">BTS Services informatiques aux organisations</span>, option <span class="important-word">Solutions logicielles et applications métiers</span>. <br><br>
+                        Mon parcours et mes expériences professionnelles m’ont permis d’acquérir des compétences techniques et humaines, comme la <span class="important-word">rigueur</span>, l'<span class="important-word">autonomie</span> et le <span class="important-word">travail en équipe</span>. Cela m’a également permis de connaître le monde du travail.<br> <br>
+                    </p>
+                </div>
+            </div>
             <h2>Formations</h2>
             <img src="./image/training2.png" alt="training" class="image-training"/>
             <h2>Compétences</h2>
@@ -64,43 +84,53 @@
                     <b>Mener</b> un projet à terme<br>
                 </p>
                 <p>
-                    <b>Programmation</b> (HTML, CSS, JavaScript, PHP,  JAVA, Python, C#, VSCode) <br>
-                    Gestion de <b>serveur</b> (VM, NAS, LINUX, Apache, Windows)<br>
-                    Gestion de <b>base de données</b> (MySQL, SQL Server, UML)<br>
-                    <b>CyberSécurité</b> (OWASP,  Hacking, Secure Coding, RGPD)<br>
-                    Utiliser un <b>terminal de commande</b> (PowerShell, Bash)<br>
-                    <b>Optimiser un réseau</b> en ajoutant des services (DHCP, WDS, WSUS)<br>
-                    Mettre en place un <b>environnement de test</b> avec VirtualBox<br>
-                    Travail en <b>collaboration</b> (GitHub, NAS, Cloud)<br>
-                    Réaliser une <b>veille technologique</b><br>
-                    Bonne maîtrise de <b>Word et Excel</b><br>
-                    <b>Monter un ordinateur</b> pour un client<br>
+                    <b>Programmation</b> (HTML, CSS, JavaScript, PHP,  JAVA, Python, C#, VSCode) <br><br>
+                    Gestion de <b>serveur</b> (VM, NAS, LINUX, Apache, Windows)<br><br>
+                    Gestion de <b>base de données</b> (MySQL, SQL Server, UML)<br><br>
+                    <b>CyberSécurité</b> (OWASP,  Hacking, Secure Coding, RGPD)<br><br>
+                    Utiliser un <b>terminal de commande</b> (PowerShell, Bash)<br><br>
+                    <b>Optimiser un réseau</b> en ajoutant des services (DHCP, WDS, WSUS)<br><br>
+                    Mettre en place un <b>environnement de test</b> avec VirtualBox<br><br>
+                    Travail en <b>collaboration</b> (GitHub, NAS, Cloud)<br><br>
+                    Réaliser une <b>veille technologique</b><br><br>
+                    Bonne maîtrise de <b>Word et Excel</b><br><br>
+                    <b>Monter un ordinateur</b> pour un client<br><br>
                     
                 </p>
             </div>
             <h2>Expériences</h2>
             <div class="experience-container">
-                <div class="experience-item">
-                    <h3>Informatique et développement Web</h3>
-                    <ul>
-                        <li>Intégration de produits en ligne (e-commerce) - Bonao</li>
-                        <li>Mise en place d'un serveur Windows 2019 - projet OpenClassrooms</li>
-                        <li>Création d'un CV en ligne (HTML/CSS) - projet personnel</li>
-                    
-                    </ul>
+                <div class="experience-item experience-item-container">
+                    <img src="image/ordinateur-personnel.png" alt="ordinateur"/>
+                    <div class="experience-item-2">
+                        <h3>Informatique et développement Web</h3>
+                        <p>
+                            Intégration de produits en ligne (e-commerce) - <i>Bonao</i> <br>
+                            Mise en place d'un serveur Windows 2019 - <i>projet OpenClassrooms</i> <br>
+                            Création d'un CV en ligne (HTML/CSS) - <i>projet personnel</i> <br>
+                        
+                        </p>
+                    </div>
                 </div>
-                <div class="experience-item">
-                    <h3>Restauration (2017-2020)</h3>
-                    <ul>
-                        <li>Restauration collective, traditionnelle,  rapide, boulangerie/pâtisserie</li>
-                    </ul>
+                <div class="experience-item experience-item-container">
+                    <img src="image/cuisine.png" alt="cuisine"/>
+                    <div class="experience-item-2">
+                        <h3>Restauration (2017-2020)</h3>
+                        <p>
+                            Restauration collective, traditionnelle,  rapide, boulangerie/pâtisserie 
+                        </p>
+                    </div>
                 </div>
-                <div class="experience-item">
-                    <h3>Service civique (2015-2016) <small>Association prévention routière du Morbihan</small></h3>
-                    <ul>
-                        <li>Sensibilisation aux risques routiers</li>
-                        <li>Interventions dans divers établissements</li>
-                    </ul>
+                <div class="experience-item experience-item-container">
+                    <img src="image/recompense.png" alt="service civique"/>
+                    <div class="experience-item-2">
+                        <h3>Service civique (2015-2016)</h3>
+                        <h4>Association prévention routière du Morbihan</h4>
+                        <p>
+                            Sensibilisation aux risques routiers <br>
+                            Interventions dans divers établissements <br>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,7 +142,7 @@
             <p class="p-footer">Site web réalisé par Ségolène Ganzin</p>
             <div class="link-container-footer">
               <a href="https://www.linkedin.com/in/segoleneganzin/" target="_blank" rel="noopener" aria-label="Linkedin profile"><img src="./image/linkedin.png" alt="Logo Linkedin"></a>
-              <a href="https://github.com/" target="_blank" rel="noopener" aria-label="Github profile"><img src="./image/github.png" alt="Logo Github"></a>
+              <a href="https://github.com/segoleneganzin" target="_blank" rel="noopener" aria-label="Github profile"><img src="./image/github.png" alt="Logo Github"></a>
             </div>
           </footer>
 
