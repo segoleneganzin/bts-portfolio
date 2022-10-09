@@ -3,7 +3,7 @@ h1 {
     line-height: 3;
 }
 main {
-    background-color: var(--background-color-secondary);
+    background-color: black;
 }
 .image-container {
     display: flex;
@@ -11,7 +11,7 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    background-color: var(--background-color-secondary);
+    background-color: var(--cack-color);
     padding-bottom: 0 5%;
     padding-bottom: 10%;
 }
@@ -28,6 +28,7 @@ p {
 figcaption {
     font-style: italic;
     font-size: 25px;
+    color: var(--text-color);
 }
 @media all and (max-width: 1440px) {
     figure {
@@ -48,7 +49,7 @@ figcaption {
         justify-content: center;
         flex-wrap: no-wrap;
         align-items: center;
-        background-color: var(--background-color-secondary);
+        background-color: var(--background-color-principal);
         padding-bottom: 0 5%;
     }
     figure {

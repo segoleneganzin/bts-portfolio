@@ -1,15 +1,28 @@
 body {
-    background-color: var(--background-color-secondary);
+    background-color: var(--back-color);
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.form-item {
+    width: 600px;
+    height: 600px;
 }
 iframe {
     display: block;
-    margin: 0 auto;
+    margin: auto;
 }
 form {
     background-color: var(--background-color-secondary);
     position: relative;
-    width: 500px;
-    margin: 50px auto 100px auto;}
+    margin: auto;
+    border: 2px solid var(--a-focus-color);
+}
+/*****************************************************contenu du formulaire********************************************/
 input {
     width: 100%;
     height: 50px;
@@ -21,14 +34,29 @@ textarea {
     width: 100%;
     height: 200px;
 }
-button:focus {
-    border: 1px solid var(--a-focus-color);
+button {
+    display: block;
+    margin: auto;
 }
-@media all and (max-width: 768px)  {  
-    form {
-        width: 90%;
+legend {
+    color: var(--text-color);
+}
+
+/*********************************************responsive****************************************/
+
+@media all and (max-width: 1300px)  {  
+    .form-container {
+        flex-direction: column;
+    }
+    .form-item {
+        padding: 5%;
     }
     iframe {
+        width: 90%;
+    }
+}
+@media all and (max-width: 680px) {
+    .form-item {
         width: 80%;
     }
 }

@@ -13,20 +13,23 @@
     --a-visited-color: white;
     --a-focus-color: #FF5733;
     --background-color-principal: black;
-    --background-color-secondary:white;
+    --background-color-secondary:#0B2B50;
     --back-color: black;
     --nav-link-color:white;
-    --nav-hover-back-color: black;
+    --nav-hover-back-color: var(--background-color-principal);
     --for-color:black;
     --drawer-back-color:black;
     --drawer-border-color: black;
     --drawer-close-color:white;
     --drawer-hover-back-color: #FF5733;
     --title-color:white;
-    --text-color:black;
+    --text-color:white;
     --evidence-color:var(--a-focus-color);
     --input-focus-color:black;
     --input-invalid-color: transparent;
+}
+* {
+    font-size: 15px;
 }
 html {
     font-family: "Roboto", Times, serif;
@@ -35,7 +38,7 @@ html {
     position: fixed;
     top: 0%;
     left: 0%;
-    height: 100vh;
+    height: 100%;
     width: 15px;
     background: rgb(45,185,253);
     background: linear-gradient(0deg, rgba(45,185,253,1) 0%, rgba(55,45,253,1) 42%, rgba(255,87,51,1) 100%);}
@@ -48,21 +51,22 @@ body{
 header {
     height: auto;
     background-color: var(--background-color-principal);
+    border-bottom: none;
 }
 #scroll_to_top {
     position: fixed;
     bottom: 2%;
     right: 2%;
 }
-/*******************************************************gestion du main**********************************************************/
-.transition {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
-    padding-bottom: 3%;
-    margin-bottom: 5%;
+.reveal {
+    opacity: 0;
+    transform: translateY(-30px);
 }
-#main {
-    background-color: var(--background-color-secondary);
+  
+.reveal-visible {
+opacity: 1;
+transform: translateY(0);
+transition: 1s cubic-bezier(0.77, 0.17, 0.43, 0.97);
 }
 /*******************************************************gestion de la typographie************************************************/
 h1{
@@ -80,20 +84,31 @@ p {
     text-align: justify;
     font-size: 20px;
 }
-ul, li {
-    font-size: 25px;
-}
 b {
     font-size: 30px;
     color: var(--evidence-color);
 }
+li {
+    font-size: 20px;
+    list-style: none;
+}
 .highlight {
     font-size: larger;
     font-weight: bold;
-    color:var(--background-color-principal)
+    color:var(--a-focus-color);
 }
 .page-title {
     color: var(--title-color) ;
+}
+/*******************************************************gestion du main**********************************************************/
+.transition {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+}
+#main {
+    background-color: var(--background-color-secondary);
 }
 /*********************************************************Gestion des liens ********************************************************/
 a {
@@ -113,9 +128,6 @@ text-decoration: none;
 nav {
     background-color: var(--background-color-principal);
     border: none;
-}
-li{
-    list-style: none;
 }
 .pages-nav {
   display: flex;
@@ -146,8 +158,9 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--background-color-principal);
+    background-color: var(--back-color);
     border: none;
+    border-top: 5px solid #2EA1FC;
     position: relative;
     bottom: 0%;
 }
@@ -156,7 +169,7 @@ footer {
     text-align: center;
     font-size: 20px;
     font-weight: 400;
-    color: grey;
+    color: var(--text-color);
 }
 .link-container-footer {
     position: relative;
