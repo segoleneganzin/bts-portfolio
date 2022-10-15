@@ -5,7 +5,8 @@
         <title>Contact</title>
         <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="monScript.js"></script>
+        <script src="js/jquery.min.js"></script>
+		    <script src="js/form.js"></script>
         <link rel="stylesheet" href="css/base-style.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/contact-style.css" type="text/css" media="screen" />
     </head>
@@ -44,42 +45,57 @@
         <div class="form-container">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21508.001541984842!2d-2.74832710244141!3d47.63584605498085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1663572538644!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="form-item"></iframe>
 
-          <!-- <form action="form.html" method="post">
-            <div>
-              <input type="text" id="lastname" name="user_lastname" placeholder="NOM" required>
+          <div class="form-item">
+            <div id="frmContact">
+
+              <div>
+                <label style="padding-top:20px;" id="nameLabel">Nom :</label>
+                <span id="uName-info" class="info"></span><br />
+                <input type="text" name="uName" id="uName" class="inputBox">
+              </div>
+        
+              <div>
+                <label id="mailLabel">Email :</label>
+                <span id="uMail-info" class="info"></span><br />
+                <input type="email" name="uMail" id="uMail" class="inputBox">
+              </div>
+        
+              <div>
+                  <label id="sujetLabel">Sujet :</label>
+                  <span id="sujet-info" class="info"></span><br />
+                  <select id="subject" name="subject">
+                    <option value="choix">Choisissez un sujet (facultatif)</option>
+                    <option value="stage">Stage</option>
+                    <option value="emploi">Emploi</option>
+                    <option value="renseignements">Renseignements</option>
+                    <option value="autre">Autre</option>
+                  </select>
+              </div>
+        
+              <div>
+                <label id="messageLabel">Message :</label>
+                <span id="content-info" class="info"></span><br />
+                <textarea name="content" id="content" class="inputBox" cols="60" rows="6"></textarea>
+              </div>
+        
+              <div>
+                <button name="submit" class="btnAction">Envoyer</button>
+                <div id="form-status" class="success">
+                  <p>Formulaire envoyé</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <input type="text" id="firstname" name="user_firstname" placeholder="PRENOM" required>
-            </div>
-            <div>
-              <input type="email" id="mail" name="user_mail" placeholder="MAIL" required>
-            </div>
-            <div>
-              <select id="subject" name="subject">
-                <option value="choix">Choisissez un sujet</option>
-                <option value="stage">Stage</option>
-                <option value="emploi">Emploi</option>
-                <option value="renseignements">Renseignements</option>
-                <option value="autre">Autre</option>
-              </select>
-            </div>
-            <div>
-              <textarea id="msg" name="user_message" placeholder="MESSAGE" required></textarea>
-            </div>
-            <div class="button">
-              <button type="submit">Envoyer le message</button>
-            </div>
-          </form> -->
-          <form class="form-item">
+          </div>
+          <!-- <form class="form-item">
             <fieldset>
               <legend>Formulaire de contact</legend>
               <div class="row">
                 <div class="col-sm-12 col-md-6">
-                  <!-- <label for="username">Nom</label> -->
+                  <label for="username">Nom</label> 
                   <input type="text" id="lastname" placeholder="Votre nom" required/>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                  <!-- <label for="password">Password</label> -->
+                  <label for="password">Password</label> 
                   <input type="password" id="firstname" placeholder="Votre prénom" required/>
                 </div>
               </div>
@@ -100,7 +116,7 @@
               </div>
               <button class="inverse">Envoyer</button>
             </fieldset>
-          </form>
+          </form> -->
         </div>
       </main>
       <footer>
