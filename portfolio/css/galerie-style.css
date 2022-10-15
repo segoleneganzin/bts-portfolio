@@ -2,9 +2,6 @@ h1 {
     margin: 0%;
     line-height: 3;
 }
-main {
-    background-color: black;
-}
 .image-container {
     display: flex;
     flex-direction: row;
@@ -19,6 +16,9 @@ figure {
     height: 600px;
     width: 600px;
     margin: 5%;
+}
+figure img {
+    border-radius: 10px;
 }
 p {
     color: var(--text-color);
@@ -49,7 +49,6 @@ figcaption {
         justify-content: center;
         flex-wrap: no-wrap;
         align-items: center;
-        background-color: var(--background-color-principal);
         padding-bottom: 0 5%;
     }
     figure {

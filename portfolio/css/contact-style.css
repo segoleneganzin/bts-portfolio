@@ -9,18 +9,15 @@ body {
     padding-top: 5%;
 }
 .form-item {
-    width: 600px;
-    height: 600px;
-}
-iframe {
-    display: block;
-    margin: auto;
-}
-form {
+    padding: 1%;
     background-color: var(--background-color-secondary);
     position: relative;
     margin: auto;
     border: 2px solid var(--a-focus-color);
+}
+iframe {
+    display: block;
+    margin: auto;
 }
 /*****************************************************contenu du formulaire********************************************/
 input {
@@ -60,3 +57,35 @@ legend {
         width: 80%;
     }
 }
+/**********************************ajout formulaire JQuery**************************************/
+#frmContact {border-top:#F0F0F0 2px solid;background:#FAF8F8;padding:10px;}
+#frmContact div{margin-bottom: 15px}
+#frmContact div label{margin-left: 5px}
+.inputBox {padding:10px; border:#F0F0F0 1px solid; border-radius:4px;}
+.error {
+    /* background-color: #FF6600; */
+    /* padding: 5px 10px; */
+    border: 2px solid red;
+    /* border-radius:4px;} */
+}
+.ok {
+    background-color: white;
+    color: black;
+    border: none;
+}
+.success {
+    display: none;
+    background-color: #12CC1A;
+    border:#0FA015 1px solid;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius:4px;
+}
+.form-status {
+    display: none;
+}
+.info {font-size:.8em;color: #FF6600;letter-spacing:2px;padding-left:5px;}
+.btnAction {background-color:#2FC332;border:0;padding:10px 40px;color:#FFF;border:#F0F0F0 1px solid; border-radius:4px;}
+.btnReload {background-color:#8B8B8B;border:0;padding:7px 10px;color:#FFF;float:left;}

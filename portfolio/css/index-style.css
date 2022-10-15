@@ -1,6 +1,4 @@
-body {
-    background-color: var(--back-color);
-}
+
 #slider {
     margin-top: 1%;
 }
@@ -14,13 +12,10 @@ body {
     text-align: center;
 }
 .carousel {
-    background-color: var(--back-color);
     padding-top: 2%;
 }
 .index-presentation {
     padding-top: 0%;
-    /* background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%); */
     border: none;
     padding-bottom: 10%;
 }
