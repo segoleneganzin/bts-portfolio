@@ -1,7 +1,7 @@
 let chrono = document.getElementById("chrono"),
     resetBtn = document.getElementById("reset"),
     stopBtn = document.getElementById("stop"),
-    startBtn = document.getElementById("start"),
+    startBtn = document.getElementById("go"),
     heures = 0,
     minutes = 0,
     secondes = 0,
@@ -33,23 +33,26 @@ function reset() {
     heures = 0;
     minutes = 0;
     secondes = 0;
+    millisecondes = 0;
     clearTimeout(timeout);
 };
 
 function defilerTemps() {
-    //if (estArrete) return;
 
+    jours = parseInt(jours);
     millisecondes = parseInt(millisecondes);
     secondes = parseInt(secondes);
     minutes = parseInt(minutes);
     heures = parseInt(heures);
-    jours = parseInt(jours);
+
     function defilerMilliSec() {
         for (let i = 0; i < 100; i++) {
             millisecondes = i;
         }
     }
+
     defilerMilliSec();
+
     if (millisecondes == 99) {
         secondes++;
         millisecondes = 0;
@@ -91,7 +94,7 @@ function defilerTemps() {
     document.getElementById('second').innerHTML = minutes;
     document.getElementById('milliSec').innerHTML = secondes;
 
-    timeout = setTimeout(defilerTemps, 10);
+    timeout = setTimeout(defilerTemps, 16);
 };
 
 

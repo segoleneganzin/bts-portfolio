@@ -125,7 +125,7 @@ setInterval(function(){
 
 	if (alarmTime == currentTime) {
 		sound.play();
-        console.log("c\'est l\'heure")
+        console.log("c\'est l\'heure");
 		}
 
 },1000);
